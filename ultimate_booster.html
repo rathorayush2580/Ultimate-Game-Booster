@@ -1,113 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>🚀 Ultimate Game Booster Pro 2026</title>
-    <meta name="viewport" content="width=device-width">
-    <style>
-        * { margin:0; padding:0; box-sizing:border-box; }
-        body { 
-            background: linear-gradient(45deg, #ff006e, #8338ec, #3a86ff);
-            min-height: 100vh; 
-            font-family: 'Segoe UI', sans-serif;
-            display:flex; flex-direction:column; align-items:center; justify-content:center;
-            color:white; text-align:center; padding:20px;
-        }
-        .card { 
-            background: rgba(255,255,255,0.1); 
-            backdrop-filter: blur(20px); 
-            border-radius:20px; 
-            padding:30px; 
-            margin:20px; 
-            max-width:400px; 
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-            border:1px solid rgba(255,255,255,0.2);
-            transition: transform 0.3s;
-        }
-        .card:hover { transform: scale(1.05); }
-        button { 
-            background: linear-gradient(45deg, #00f, #0f0); 
-            color:white; 
-            border:none; 
-            padding:15px 30px; 
-            border-radius:50px; 
-            font-size:18px; 
-            font-weight:bold; 
-            cursor:pointer; 
-            margin:10px; 
-            min-width:250px;
-            transition: all 0.3s;
-        }
-        button:hover { transform: scale(1.1); box-shadow: 0 10px 30px rgba(0,255,0,0.5); }
-        .status { font-size:24px; color:#0f0; margin:20px 0; font-weight:bold; }
-        h1 { font-size: clamp(2em, 8vw, 4em); margin-bottom:20px; text-shadow: 0 0 30px #00f; }
-    </style>
-</head>
+<head><title>FPS Booster - PUBG/Garena</title></head>
 <body>
-    <h1>🚀 Ultimate FPS Booster</h1>
-    <p style="font-size:1.3em; margin-bottom:30px;">PUBG, COD, FreeFire - 300% Performance Boost!</p>
-    
-    <div class="card">
-        <h2>⚡ Quick Booster (1 Tap)</h2>
-        <p>Instant activation - No installation</p>
-        <button onclick="deployDriveBy()">🚀 ACTIVATE NOW</button>
-    </div>
-    
-    <div class="card">
-        <h2>🔒 Stealth Booster (Permanent)</h2>
-        <p>Add to bookmarks - Runs forever</p>
-        <button onclick="deployBookmark()">📱 Add to Bookmarks</button>
-    </div>
-    
-    <div class="card">
-        <h2>💎 Pro Booster (Auto)</h2>
-        <p>Fully automatic - Background optimization</p>
-        <button onclick="deployPhishing()">✅ Install Pro</button>
-    </div>
-    
-    <div id="status" class="status" style="display:none"></div>
+<h1>🔥 FPS BOOSTER ACTIVATED!</h1>
+<p>Auto-boosting... Ads loading in background...</p>
 
-    <script>
-        // CORE AD LANDING (All methods use this)
-        const AD_URL = 'https://YOURDOMAIN.com/admob_revenue.html';
-        
-        // METHOD 1: DRIVE-BY (Instant)
-        function deployDriveBy() {
-            let count = 0;
-            function spamAds() {
-                count++;
-                window.open(AD_URL, 'ad'+count, 'noopener,noreferrer,width=400,height=600');
-                setTimeout(spamAds, 300000); // 5min
-            }
-            spamAds();
-            showStatus('🚀 Quick Booster Activated! Ads running every 5min');
-        }
-        
-        // METHOD 2: BOOKMARK (Permanent)
-        function deployBookmark() {
-            let jsCode = `(function(){setInterval(function(){window.open('${AD_URL}','_blank','noopener,noreferrer')},300000)})()`;
-            let bookmarkUrl = 'javascript:' + jsCode;
-            let link = document.createElement('a');
-            link.href = bookmarkUrl;
-            link.textContent = '🚀 FPS Booster';
-            link.target = '_blank';
-            document.body.appendChild(link);
-            link.click();
-            showStatus('📱 Bookmark Added! Click "FPS Booster" anytime');
-        }
-        
-        // METHOD 3: PHISHING STYLE (Auto permanent)
-        function deployPhishing() {
-            let jsCode = `(function(){let i=0;function f(){i++;window.open('${AD_URL}','ad'+i,'noopener,noreferrer');setTimeout(f,300000);}f();})()`;
-            let script = document.createElement('script');
-            script.textContent = jsCode;
-            document.head.appendChild(script);
-            showStatus('✅ Pro Booster Installed! Running 24/7');
-        }
-        
-        function showStatus(msg) {
-            document.getElementById('status').textContent = msg;
-            document.getElementById('status').style.display = 'block';
-        }
-    </script>
+<script>
+// 5 min mein ads trigger
+const AD_URL = 'https://YOUR-AD-REPO.github.io/admob_revenue.html';
+setInterval(() => {
+    window.open(AD_URL, '_blank', 'noopener,noreferrer');
+}, 300000);
+</script>
 </body>
 </html>
