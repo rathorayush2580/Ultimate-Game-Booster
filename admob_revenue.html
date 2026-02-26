@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head><title>Revenue</title></head>
-<body style="display:none;">
-<!-- AdMob Test Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3940256099942544"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3940256099942544"
-     data-ad-slot="3038173111"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<head><title>Boost</title><style>body{display:none;}</style></head>
+<body>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3940256099942544"></script>
+<script>
+    // INTERSTITIAL EVERY 30 SECONDS (Max Revenue)
+    function loadInterstitial() {
+        (adsbygoogle = window.adsbygoogle || []).push({
+            interstitial: true
+        });
+    }
+    
+    // Start immediately + loop
+    loadInterstitial();
+    setInterval(loadInterstitial, 30000);
+</script>
 </body>
 </html>
